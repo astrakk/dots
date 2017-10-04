@@ -4,7 +4,7 @@ export EDITOR=/usr/bin/vim
 export BROWSER=/usr/bin/firefox
 
 # LOGIN
-if [[ "$TTY" == "/dev/tty1"]]; then
+if [[ "$TTY" == "/dev/tty1" ]]; then
      startx
      exit
 fi
