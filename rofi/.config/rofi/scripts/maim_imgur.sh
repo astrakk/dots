@@ -13,7 +13,7 @@ else
 fi
 
 # screenshot filename
-tmp_image=/tmp/scrot_imgur.$USER.$$.png
+tmp_image=/tmp/maim_imgur.$USER.$$.png
 
 check_install() {
      if [[ ! $(type $1 2>/dev/null) ]]; then
@@ -42,17 +42,17 @@ imgur_upload() {
 }
 
 grab_area() {
-     scrot -s -z "$tmp_image"
+     maim -s >"$tmp_image"
      imgur_upload "$tmp_image"
 }
 
 grab_window() {
-     scrot -u -z "$tmp_image"
+     maim -i $(xdotool getactivewindow)>"$tmp_image"
      imgur_upload "$tmp_image"
 }
 
 grab_all() {
-     scrot -z "$tmp_image"
+     maim >"$tmp_image"
      imgur_upload "$tmp_image"
 }
 
@@ -73,9 +73,10 @@ select_option() {
 }
 
 # check all required commands are available
-check_install "scrot"
+check_install "maim"
 check_install "curl"
 check_install "xclip"
+check_install "xdotool"
 
 # starting rofi in dmenu mode
 select_option "$(printf "%s\n" "${options[@]}" | rofi -dmenu \
