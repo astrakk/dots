@@ -7,33 +7,38 @@ These are my personal dotfiles designed to work on all of my devices with no ind
 
 I do most of my testing on Arch Linux as it has become my daily driver. Slowly I'm trying to make it all less distro-exclusive.
 
+#### Display
+
+This set of dotfiles assumes a display of 1920x1080 or smaller resolution. For HiDPI displays, go to [the HiDPI dots repo](https://github.com/astrakk/dots-hidpi)
+
 #### Packages
 
-  - scrot
+  - stow
+  - maim
   - imagemagick
   - i3lock
   - openvpn
-  - systemd
   - compton
   - dunst
   - i3-gaps
-  - rofi
-  - feh
+  - feh 
   - neofetch
   - polybar
-  - NetworkManager
-  - jq
   - xrandr
-  - xdotool
-  - xdo
-  - xprop
-  - xrdb
-  - sed
-  - curl
-  - compton
-  - vim
-  - Vundle.Vim
-  - rxvt-unicode
-  - zsh
-  - Oh My Zsh
+  - xdo 
+  - xorg-xprop
   - qutebrowser
+  - rofi
+  - firefox
+  - chromium
+  - curl
+  - xdotool
+  - xclip
+  - vim (with Vundle.vim)
+  - gnome-keyring
+  - libgnome-keyring
+  - libsecret
+  - polkit-gnome
+  - rxvt-unicode
+  - zsh (with Oh-My-ZSH)
+  - xorg-xinit
