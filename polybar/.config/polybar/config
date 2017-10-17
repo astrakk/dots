@@ -70,6 +70,7 @@ margin-bottom = 5
 
 [bar/primary]
 monitor             = ${env:MONITOR}
+enable-ipc          = true
 
 width               = 100%
 height              = 35
@@ -100,7 +101,6 @@ modules-right       = openvpn battery ssid date
 
 tray-position       = none
 tray-padding        = 2
-enable-ipc          = true
 
 [bar/tray]
 monitor             = ${env:MONITOR}
