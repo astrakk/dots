@@ -100,6 +100,7 @@ modules-right       = openvpn battery ssid date
 
 tray-position       = none
 tray-padding        = 2
+enable-ipc          = true
 
 [bar/tray]
 monitor             = ${env:MONITOR}
@@ -233,13 +234,10 @@ label-charging      = "%{u#ffcc66 +u}  %percentage%%  %{-u}"
 label-discharging   = "%{u#6699cc +u}  %percentage%%  %{-u}"
 
 [module/openvpn]
-type                = custom/script
-exec                = secured="#6699cc" unsecured="#f2777a" ~/.config/polybar/scripts/openvpn_status.sh
-interval            = 5
+type                = custom/ipc
 
-format-background   = ${appearance.background}
-format-foreground   = ${appearance.foreground}
-label-padding       = 0
+hook-0              = secured="#6699cc" unsecured="#f2777a" ~/.config/polybar/scripts/openvpn_status.sh
+initial             = 1
 
 [module/date]
 type                = internal/date
