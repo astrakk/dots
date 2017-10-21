@@ -235,7 +235,6 @@ label-discharging   = "%{u#6699cc +u}  %percentage%%  %{-u}"
 
 [module/openvpn]
 type                = custom/ipc
-
 hook-0              = secured="#6699cc" unsecured="#f2777a" ~/.config/polybar/scripts/openvpn_status.sh
 initial             = 1
 
