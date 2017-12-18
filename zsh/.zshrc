@@ -64,6 +64,13 @@ function zle-line-init zle-keymap-select {
 zle -N zle-line-init
 zle -N zle-keymap-select
 
+function zle-line-finish {
+     RPROMPT=""
+     zle reset-prompt
+}
+
+zle -N zle-line-finish
+
 precmd_functions+=(prompt_info)
 
 PROMPT=$PS1
