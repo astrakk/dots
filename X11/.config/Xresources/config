@@ -46,4 +46,7 @@ URxvt.internalBorder:    20
 URxvt.iso14755:          false
 URxvt.secondaryScreen:   1
 URxvt.secondaryScroll:   0
-URxvt*termName:          xterm-256color 
+URxvt*termName:          xterm-256color
+
+URxvt.perl-ext-common: keyboard-select
+URxvt.keysym.M-Escape: perl:keyboard-select:activate
