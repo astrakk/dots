@@ -22,7 +22,6 @@ This set of dotfiles assumes a display of 1920x1080 or smaller resolution. For H
   - dunst
   - i3-gaps
   - feh 
-  - neofetch
   - polybar
   - xrandr
   - xdo 
@@ -40,5 +39,5 @@ This set of dotfiles assumes a display of 1920x1080 or smaller resolution. For H
   - libsecret
   - polkit-gnome
   - rxvt-unicode
-  - zsh (with Oh-My-ZSH)
+  - zsh
   - xorg-xinit
