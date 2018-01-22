@@ -38,6 +38,7 @@ let g:airline_right_sep = ''
 " Function "
 "          " 
 
+
 set background=dark
 set number
 set relativenumber
