@@ -4,7 +4,6 @@ xrandr --auto
 xrandr --dpi 96
 
 # Export variables
-export TERMINAL=urxvt
 export QT_QPA_PLATFORMTHEME=qt5ct
 export QT_STYLE_OVERRIDE=gtk2
 
