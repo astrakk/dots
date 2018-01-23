@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 char font[] = "lucy tewi:pixelsize=9:antialias=false:autohint=false";
-int borderpx = 40;
+int borderpx = 20;
 
 /*
  * What program is execed by st depends of these precedence rules:
