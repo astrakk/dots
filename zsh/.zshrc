@@ -43,7 +43,6 @@ bindkey -M menuselect "^[[Z" reverse-menu-complete
 bindkey -M menuselect "\e" send-break
 
 # PROMPT
-
 function precmd() {
      echo -ne "\n$(tput setaf 8)$(whoami) $(tput setaf 4)$(dirs -c; dirs)\n"
 }
