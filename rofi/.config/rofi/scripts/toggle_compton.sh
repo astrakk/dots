@@ -18,7 +18,7 @@ select_option() {
      case $1 in
           '1: Start compton' )
                if [[ $compton_config ]]; then
-                    compton --config $compton_config
+                    allow_rgb10_configs=false compton --config $compton_config
                else
                     compton
                fi
@@ -34,7 +34,7 @@ select_option() {
                done
 
                if [[ $compton_config ]]; then
-                    compton --config $compton_config
+                    allow_rgb10_configs=false compton --config $compton_config
                else
                     compton
                fi
